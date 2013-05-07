@@ -21,7 +21,27 @@ $(function(){
 	        autospeed: 5000
 	    });
     }
-    if (relative) {
+    if ($("#etalage").length == 1) {
+		$("#etalage").etalage({
+			thumb_image_width: 250,
+			thumb_image_height: 250,
+			source_image_width: 600,
+			source_image_height: 600,
+			zoom_area_width: 300,
+			zoom_area_height: 300,
+			zoom_area_distance: 5,
+			small_thumbs: 4,
+			smallthumb_inactive_opacity: 0.3,
+			smallthumbs_position: "bottom",
+			speed: 200,
+			show_icon: false,
+			autoplay: false,
+			keyboard: false,
+			zoom_easing: false
+		});
+		$('#etalage').bind('contextmenu', function(){return false;});
+	}
+	if (relative) {
 		$('a').attr('href', function(a,b){return to_relative(b, true);});
 		$('img').attr('src', function(a,b){return to_relative(b, false);});
 	}

@@ -1,0 +1,9 @@
+---
+layout: default
+---
+{% for category in site.product_categories %}{% for subcategory in category.cats %}
+<h3>{{ subcategory[1] }}</h3>
+<ul class="prodsublist">{% capture subcatname %}{{ subcategory[0] }}{% endcapture %}{% for post in site.categories[subcatname] %}
+			<li><a href="{{ post.url }}"><img src="{{ post.images[0] }}" />{{ post.name }}</a></li>
+{% endfor %}
+</ul>{% endfor %}{% endfor %}

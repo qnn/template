@@ -75,7 +75,9 @@ more_scripts: ["scripts/sliderkit-1.9.2.min.js"]
 						产品中心<em>Products</em>
 					</h3>
 					<ul class="productlist">
-						<li></li>
+{% for post in site.posts limit:30 offset:0 %}
+						<li><a href="{{ post.url }}"><img src="{{ post.images[0] }}" />{{ post.title }}</a></li>
+{% endfor %}
 					</ul>
 				</div>
 				
