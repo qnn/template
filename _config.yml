@@ -1,0 +1,29 @@
+# name of the site:
+name: QNN
+
+# default title:
+title: QNN
+
+# default description:
+description: QNN
+
+# default keywords:
+keywords: 全能
+
+# site.url, no trailing slash:
+url: http://www.qnn.com.cn
+
+# files to exclude:
+exclude: ['README.md']
+
+# code highlight:
+pygments: true
+
+# markdown:
+markdown: rdiscount
+
+# permalink of posts:
+permalink: /products/:title/
+
+# items per page"
+paginate: 20

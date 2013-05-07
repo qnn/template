@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+Web Design by caiguanhao <caiguanhao@gmail.com>.
+Source of this page can be found on:
+* https://github.com/caiguanhao/8html.com{% if page.location %}/blob/master{{ page.location }}
+* https://raw.github.com/caiguanhao/8html.com/master{{ page.location }}{% endif %}
+Powered by Jekyll, the blog-aware, static site generator in Ruby.{% if page.url == 'index.html' %}
+Generated on {{ site.time }}.{% endif %}
+-->
+<html>
+{% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}{%capture page_title %}{% include titles.html %}{% endcapture %}
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}{% if page.tags %},{{ page.tags | join:',' }}{% endif %}" />
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+<meta name="viewport" content="width=1024" />
+<title>{{ page_title | strip_newlines }}</title>
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
+<link href="{{ relative }}css/main.css" rel="stylesheet" />{% for item in page.more_css %}
+<link href="{{ item | prepend_relative:relative }}" rel="stylesheet" />{% endfor %}
+<link rel="shortcut icon" href="{{ relative }}favicon.ico" type="image/x-icon" />
+<script src="{{ relative }}scripts/jquery.min.js"></script>
+<script src="{{ relative }}scripts/header.min.js"></script>{% for item in page.more_scripts %}
+<script src="{{ item | prepend_relative:relative }}"></script>{% endfor %}
+</head>
+
+<body>
+
+<div id="wrapper">
