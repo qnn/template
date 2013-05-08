@@ -331,13 +331,100 @@ background:#ccc
 }
 
 .pro2cols {
-
+background: #FFF;
+border: 1px solid #999;
+margin: 0 0 10px 0;
 }
 .pro2col_l {
-
+float: left;
+width: 200px;
+}
+.pro2cols .pro2col_l h2.header {
+text-align: center;
+border-bottom: 1px solid #999;
+background: #CCC;
+font-size: 22px;
+padding: 6px;
+margin: 0 0 15px 0;
+}
+.pro2cols .pro2col_l h3 em {
+font-size: 14px;
+font-style: normal;
+display: block;
+text-align: center;
+border-radius: 7px;
+padding: 6px;
+margin: 5px 10px;
+border: 1px solid #CCC;
+background: #FFF;
+background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(225, 233, 238, 1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 1)), color-stop(100%,rgba(225, 233, 238, 1)));
+background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%,rgba(225, 233, 238, 1) 100%);
+background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%,rgba(225, 233, 238, 1) 100%);
+background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%,rgba(225, 233, 238, 1) 100%);
+background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%,rgba(225, 233, 238, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1e9ee',GradientType=0 );
+}
+.pro2cols .pro2col_l ul.xpro {
+list-style: none;
+}
+.pro2cols .pro2col_l ul.xpro li {
+width: 170px;
+height: 30px;
+background: url(../images/sepline.png) repeat-x 0 26px;
+margin: 0 auto;
+line-height: 25px;
+text-align: center;
+}
+.pro2cols .pro2col_l ul.xpro li a {
+display: block;
+width: 170px;
+height: 25px;
+line-height: 25px;
+overflow: hidden;
+text-align: center;
+color: #666;
+font-size: 13px;
+text-decoration: none;
+}
+.pro2cols .pro2col_l ul.xpro li a:hover {
+font-size: 13px;
+color: #D71920;
+text-decoration: none;
 }
 .pro2col_r {
-
+float: left;
+width: 797px;
+border-left: 1px solid #999;
+min-height: 800px;
+height:auto !important; 
+height:800px; 
+overflow:visible;
+}
+.pro2cols .pro2col_r h2.header {
+text-align: left;
+border-bottom: 1px solid #999;
+background: #E2E2E2;
+font-size: 22px;
+padding: 6px 12px;
+margin: 0 0 15px 0;
+}
+.pro2cols .pro2col_r h2.header em {
+float: right;
+font-size: 13px;
+font-style: normal;
+line-height: 27px;
+color: #333;
+}
+.pro2cols .pro2col_r h2.header em a {
+font-size: 13px;
+font-style: normal;
+color: #333;
+text-decoration: none;
+}
+.pro2cols .pro2col_r h2.header em a:hover {
+color: #333;
+text-decoration: underline;
 }
 .gcontent {
 width: 544px;
@@ -430,7 +517,7 @@ div.etalage_description.rtl{ direction:rtl }
 .tabbtns {
 height: 25px;
 overflow: hidden;
-margin-top: 30px !important;
+margin: 30px 0 10px !important;
 }
 .tabbtns ul {
 list-style: none;
@@ -507,4 +594,44 @@ background: #D71920;
 font-weight: bold;
 color: #fff !important;
 background: #D71920 !important;
+}
+
+.pcontent {
+padding: 0 10px 10px 10px;
+}
+.pcontent h3 {
+font-size: 18px;
+border-bottom: 1px solid #CCC;
+padding: 3px 0 10px 0;
+margin: 0;
+}
+.pcontent h4 {
+margin: 10px 0 10px 0;
+padding: 0 0 8px;
+font-size: 18px;
+border-bottom: 1px solid #CCC;
+}
+.prodsublist {
+list-style: none;
+margin: 7px 0 10px 0;
+}
+.prodsublist div.psli {
+float: left;
+display: block;
+width: 154px;
+height: 180px;
+text-align: center;
+}
+.prodsublist img {
+width: 150px;
+height: 150px;
+}
+.prodsublist div.psli a {
+font-size: 13px;
+color: #666;
+text-decoration: none;
+}
+.prodsublist div.psli a:hover {
+color: #666;
+text-decoration: underline;
 }

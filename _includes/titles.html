@@ -1,5 +1,10 @@
 {% if page.fulltitle %}
 {{ page.fulltitle }}
 {% else %}
-{{ page.title }} - {{ site.title }}
+{% case page.layout %}
+{% when 'product-list' %}
+产品中心
+{% else %}
+{{ page.title }}
+{% endcase %} - {{ site.title }}
 {% endif %}

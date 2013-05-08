@@ -8,19 +8,34 @@ more_scripts: ["scripts/jquery-etalage-1.3.1.min.js"]
 </div>
 <div class="pro2cols">
 	<div class="pro2col_l">
-		
+		<h2 class="header">产品中心</h2>
+{% for category in site.product_categories %}
+		<h3><em>{{ category.name }}</em></h3>
+		<ul class="xpro">
+{% for subcategory in category.cats %}{% capture subcatname %}{{ subcategory[0] }}{% endcapture %}{% for post in site.categories[subcatname] limit:1 %}
+{% if subcatname == page.category %}{% capture current_category %}{{ category.name }}{% endcapture %}{% capture current_series %}{{ subcategory[1] }}{% endcapture %}{% endif %}
+			<li><a href="{{ post.url }}">{{ subcategory[1] }}</a></li>
+{% endfor %}{% endfor %}
+		</ul>
+{% endfor %}
 	</div>
 	<div class="pro2col_r">
+		<h2 class="header">
+			<em>你现在的位置：<a href="/">首页</a> &raquo; <a href="/products">产品中心</a> &raquo; 产品详细</em>
+			产品详细
+		</h2>
 		<div class="gcontent">
 			<div class="rtp">
-				<h3>商用类产品—风生水起系列</h3>
+				<h3>{{ current_category }}产品—{{ current_series | replace:'系列','' }}系列</h3>
 				<ul class="rtpul">
 					<li>规格：{{ page.specs }}</li>
 					<li>厚度：{{ page.thickness }}</li>
 					<li>净重：{{ page.weight }}</li>
 					<li>
 						<div class="clear">请选择型号：</div>
-						<a class="otherq otherqcur" href="/./bw-6960.html" title="BW-6960">BW-6960</a>
+{% for post in site.categories[page.category] %}
+						<a class="otherq{% if post.name == page.name %} otherqcur{% endif %}" href="{{ post.url }}" title="{{ post.name }}">{{ post.name }}</a>
+{% endfor %}
 						<div class="clear"></div>
 					</li>
 					<li><a class="taobao" target="_blank" href="http://qnn.tmall.com/">到淘宝商城购买</a></li>
@@ -30,7 +45,7 @@ more_scripts: ["scripts/jquery-etalage-1.3.1.min.js"]
 			<div class="lfp">
 				<ul id="etalage">
 					{% for image in page.images %}
-					<li><img class="etalage_source_image" src="{{ image }}" /></li>
+					<li><img class="etalage_source_image" src="{{ site.p_img_cdn }}{{ image }}" /></li>
 					{% endfor %}
 				</ul>
 			</div>
@@ -47,13 +62,13 @@ more_scripts: ["scripts/jquery-etalage-1.3.1.min.js"]
 			<div class="pc2hr"></div>
 			<div class="maincontent mt10px">
 				<div class="mc mc1">
-				{{ page.page1 }}
+				{{ page.page1 | sub_img_cdn:site.p_img_cdn }}
 				</div>
 				<div class="mc mc2 hidden">
-				{{ page.page2 }}
+				{{ page.page2 | sub_img_cdn:site.p_img_cdn }}
 				</div>
 				<div class="mc mc3 hidden">
-				{{ page.page3 }}
+				{{ page.page3 | sub_img_cdn:site.p_img_cdn }}
 				</div>
 				<div class="mc mc4 hidden">
 					<h2>常见问题</h2>

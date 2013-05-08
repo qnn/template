@@ -6,7 +6,10 @@ if (location.protocol==='file:') {
 function to_relative(link, index) {
 	if (!relative) return link;
 	var hash = link ? link.match(/(#.*)$/) : null;
-	if (hash) link = link.replace(/#.*$/, '');
+	if (hash) {
+		link = link.replace(/#.*$/, '');
+		if (link == '') link = './';
+	}
 	return link?(link.replace(/^\//, relative)+(index?(link.substr(-1)=='/'?'index.html':''):'')+(hash?hash[1]:'')):null;
 }
 $(function(){
@@ -45,4 +48,11 @@ $(function(){
 		$('a').attr('href', function(a,b){return to_relative(b, true);});
 		$('img').attr('src', function(a,b){return to_relative(b, false);});
 	}
+	$(".tabbtn").bind("click", function () {
+		var a = $(this).parent().index();
+		$(".tabbtn").removeClass("sel");
+		$(this).addClass("sel");
+		$(".maincontent div.mc").hide();
+		$(".maincontent div").eq(a).show()
+	});
 });

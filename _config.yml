@@ -28,6 +28,9 @@ permalink: /:categories/:title/
 # items per page"
 paginate: 20
 
+# product image cdn with trailing slash:
+p_img_cdn: http://www.cqqnn.com.cn/image-pro/
+
 product_categories: [
 {
 	name: "家用系列",
