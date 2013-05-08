@@ -3,110 +3,103 @@ more_scripts: ["scripts/jquery-etalage-1.3.1.min.js"]
 ---
 {% include top.html %}
 {% include header.html %}
-<div>
-	<img class="banner" src="/images/banner.jpg" width="998" height="192" />
-</div>
-<div class="pro2cols">
-	<div class="pro2col_l">
-		<h2 class="header">产品中心</h2>
-{% for category in site.product_categories %}
-		<h3><em>{{ category.name }}</em></h3>
-		<ul class="xpro">
-{% for subcategory in category.cats %}{% capture subcatname %}{{ subcategory[0] }}{% endcapture %}{% for post in site.categories[subcatname] limit:1 %}
-{% if subcatname == page.category %}{% capture current_category %}{{ category.name }}{% endcapture %}{% capture current_series %}{{ subcategory[1] }}{% endcapture %}{% endif %}
-			<li><a href="{{ post.url }}">{{ subcategory[1] }}</a></li>
-{% endfor %}{% endfor %}
-		</ul>
-{% endfor %}
+	<div>
+		<img class="banner" src="/images/banner.jpg" width="998" height="192" />
 	</div>
-	<div class="pro2col_r">
-		<h2 class="header">
-			<em>你现在的位置：<a href="/">首页</a> &raquo; <a href="/products">产品中心</a> &raquo; 产品详细</em>
-			产品详细
-		</h2>
-		<div class="gcontent">
-			<div class="rtp">
-				<h3>{{ current_category }}产品—{{ current_series | replace:'系列','' }}系列</h3>
-				<ul class="rtpul">
-					<li>规格：{{ page.specs }}</li>
-					<li>厚度：{{ page.thickness }}</li>
-					<li>净重：{{ page.weight }}</li>
-					<li>
-						<div class="clear">请选择型号：</div>
-{% for post in site.categories[page.category] %}
-						<a class="otherq{% if post.name == page.name %} otherqcur{% endif %}" href="{{ post.url }}" title="{{ post.name }}">{{ post.name }}</a>
+	<div class="pro2cols">
+		<div class="pro2col_l">
+			<h2 class="header">产品中心</h2>
+{% for category in site.product_categories %}
+			<h3><em>{{ category.name }}</em></h3>
+			<ul class="xpro">{% for subcategory in category.cats %}{% capture subcatname %}{{ subcategory[0] }}{% endcapture %}{% for post in site.categories[subcatname] limit:1 %}{% if subcatname == page.category %}{% capture current_category %}{{ category.name }}{% endcapture %}{% capture current_series %}{{ subcategory[1] }}{% endcapture %}{% endif %}
+				<li><a href="{{ post.url }}">{{ subcategory[1] }}</a></li>{% endfor %}{% endfor %}
+			</ul>
 {% endfor %}
-						<div class="clear"></div>
-					</li>
-					<li><a class="taobao" target="_blank" href="http://qnn.tmall.com/">到淘宝商城购买</a></li>
-					<li><a class="qnnstore" target="_blank" href="http://www.safeshop.com.cn/">到全能商城购买</a></li>
-				</ul>
-			</div>
-			<div class="lfp">
-				<ul id="etalage">
-					{% for image in page.images %}
-					<li><img class="etalage_source_image" src="{{ site.p_img_cdn }}{{ image }}" /></li>
-					{% endfor %}
-				</ul>
-			</div>
-			<div class="clear"></div>
-			<div class="tabbtns mt10px">
-				<ul>
-					<li><a href="javascript:;" class="tabbtn sel">功能特性</a></li>
-					<li><a href="javascript:;" class="tabbtn">产品参数</a></li>
-					<li><a href="javascript:;" class="tabbtn">说明书</a></li>
-					<li><a href="javascript:;" class="tabbtn">常见问题</a></li>
-				</ul>
-			</div>
-			<div class="clear"></div>
-			<div class="pc2hr"></div>
-			<div class="maincontent mt10px">
-				<div class="mc mc1">
-				{{ page.page1 | sub_img_cdn:site.p_img_cdn }}
+		</div>
+		<div class="pro2col_r">
+			<h2 class="header">
+				<em>你现在的位置：<a href="/">首页</a> &raquo; <a href="/products/">产品中心</a> &raquo; 产品详细</em>
+				产品详细
+			</h2>
+			<div class="gcontent">
+				<div class="rtp">
+					<h3>{{ current_category }}产品—{{ current_series | replace:'系列','' }}系列</h3>
+					<ul class="rtpul">
+						<li>规格：{{ page.specs }}</li>
+						<li>厚度：{{ page.thickness }}</li>
+						<li>净重：{{ page.weight }}</li>
+						<li>
+							<div class="clear">请选择型号：</div>{% for post in site.categories[page.category] %}
+							<a class="otherq{% if post.name == page.name %} otherqcur{% endif %}" href="{{ post.url }}" title="{{ post.name }}">{{ post.name }}</a>{% endfor %}
+							<div class="clear"></div>
+						</li>
+						<li><a class="taobao" target="_blank" href="http://qnn.tmall.com/">到淘宝商城购买</a></li>
+						<li><a class="qnnstore" target="_blank" href="http://www.safeshop.com.cn/">到全能商城购买</a></li>
+					</ul>
 				</div>
-				<div class="mc mc2 hidden">
-				{{ page.page2 | sub_img_cdn:site.p_img_cdn }}
+				<div class="lfp">
+					<ul id="etalage">{% for image in page.images %}
+						<li><img class="etalage_source_image" src="{{ site.p_img_cdn }}{{ image }}" /></li>{% endfor %}
+					</ul>
 				</div>
-				<div class="mc mc3 hidden">
-				{{ page.page3 | sub_img_cdn:site.p_img_cdn }}
+				<div class="clear"></div>
+				<div class="tabbtns mt10px">
+					<ul>
+						<li><a href="javascript:;" class="tabbtn sel">功能特性</a></li>
+						<li><a href="javascript:;" class="tabbtn">产品参数</a></li>
+						<li><a href="javascript:;" class="tabbtn">说明书</a></li>
+						<li><a href="javascript:;" class="tabbtn">常见问题</a></li>
+					</ul>
 				</div>
-				<div class="mc mc4 hidden">
-					<h2>常见问题</h2>
-					<h3>输入密码无反应、显示屏或指示灯无显示：</h3>
-					<ol>
-						<li>柜内电池没电，需要更换电池，按说明书方式操作，找到保险柜门板后面的电池盒更换电池。</li>
-						<li>系统处于睡眠状态，通过按A\B键唤醒系统。</li>
-						<li>输错密码键盘被锁，等待15分钟后再进行操作。</li>
-						<li>以上无法解决您的问题，请致电当地的办事处电话或联系我司统一售后热线400-830-4555。</li>
-					</ol>
-					<h3>显示屏显示电池没电，更换电新后仍不通电或仍显示没电：</h3>
-					<ol>
-						<li>查询电池是否有装反正负极。</li>
-						<li>若电池正负极已安装正确，显示屏仍无显示或显示没电，属显示屏处出现故障，请致电当地的办事处电话或联系我司统一售后热线400-830-4555。</li>
-					</ol>
-					<h3>保险柜内部电池盒有电，接入外接电池盒不通电：</h3>
-					<ol>
-						<li>外接电池盒更换新电池，检查是否有装反正负极。</li>
-						<li>上述不能解决，属外接电池盒已损坏，请致电当地的办事处电话或联系我司统一售后热线400-830-4555。</li>
-					</ol>
-					<h3>耗电量大，一周换几次电池：</h3>
-					<ol>
-						<li>请选用质量较好的碱性电池。</li>
-					</ol>
-					<h3>密码正确输入，操作一切正确，钥匙不能转动，门打不开：</h3>
-					<ol>
-						<li>锁具有问题，请致电当地的办事处电话或联系我司统一售后热线400-830-4555。</li>
-					</ol>
-					<h3>忘记密码，钥匙掉失无法开柜：</h3>
-					<ol>
-						<li>请致电当地的办事处电话或联系我司统一售后热线400-830-4555。</li>
-					</ol>
+				<div class="clear"></div>
+				<div class="pc2hr"></div>
+				<div class="maincontent mt10px">
+					<div class="mc mc1">
+{{ page.page1 | sub_img_cdn:site.p_img_cdn | indent:6 }}
+					</div>
+					<div class="mc mc2 hidden">
+{{ page.page2 | sub_img_cdn:site.p_img_cdn | indent:6 }}
+					</div>
+					<div class="mc mc3 hidden">
+{{ page.page3 | sub_img_cdn:site.p_img_cdn | indent:6 }}
+					</div>
+					<div class="mc mc4 hidden">
+						<h2>常见问题</h2>
+						<h3>输入密码无反应、显示屏或指示灯无显示：</h3>
+						<ol>
+							<li>柜内电池没电，需要更换电池，按说明书方式操作，找到保险柜门板后面的电池盒更换电池。</li>
+							<li>系统处于睡眠状态，通过按A\B键唤醒系统。</li>
+							<li>输错密码键盘被锁，等待15分钟后再进行操作。</li>
+							<li>以上无法解决您的问题，请致电当地的办事处电话或联系我司统一售后热线400-830-4555。</li>
+						</ol>
+						<h3>显示屏显示电池没电，更换电新后仍不通电或仍显示没电：</h3>
+						<ol>
+							<li>查询电池是否有装反正负极。</li>
+							<li>若电池正负极已安装正确，显示屏仍无显示或显示没电，属显示屏处出现故障，请致电当地的办事处电话或联系我司统一售后热线400-830-4555。</li>
+						</ol>
+						<h3>保险柜内部电池盒有电，接入外接电池盒不通电：</h3>
+						<ol>
+							<li>外接电池盒更换新电池，检查是否有装反正负极。</li>
+							<li>上述不能解决，属外接电池盒已损坏，请致电当地的办事处电话或联系我司统一售后热线400-830-4555。</li>
+						</ol>
+						<h3>耗电量大，一周换几次电池：</h3>
+						<ol>
+							<li>请选用质量较好的碱性电池。</li>
+						</ol>
+						<h3>密码正确输入，操作一切正确，钥匙不能转动，门打不开：</h3>
+						<ol>
+							<li>锁具有问题，请致电当地的办事处电话或联系我司统一售后热线400-830-4555。</li>
+						</ol>
+						<h3>忘记密码，钥匙掉失无法开柜：</h3>
+						<ol>
+							<li>请致电当地的办事处电话或联系我司统一售后热线400-830-4555。</li>
+						</ol>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div class="clear"></div>
 	</div>
-	<div class="clear"></div>
-</div>
 
 {% include footer.html %}
 {% include bottom.html %}

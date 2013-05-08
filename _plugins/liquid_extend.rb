@@ -13,6 +13,9 @@ module LiquidExtend
   def sub_img_cdn(input, cdn)
     input.sub('{PRODUCT_IMAGES}', cdn)
   end
+  def indent(input, num)
+    input.strip.gsub(/^/m, (["\t"] * num).join)
+  end
   
   Liquid::Template.register_filter self
 end
