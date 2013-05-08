@@ -5,12 +5,12 @@
 		</div>
 		<div id="menu">
 			<ul>
-				<li><a href="/" data-sub="Home">首页</a></li>
-				<li><a href="/about/" data-sub="About">公司简介</a></li>
-				<li><a href="/products/" data-sub="Products">产品中心</a></li>
-				<li><a href="/stores/" data-sub="Stores">专卖店风采</a></li>
-				<li><a href="/service/" data-sub="Service">服务中心</a></li>
-				<li><a href="/contact/" data-sub="Contact Us">联系我们</a></li>
+				<li><a{% if page.url == 'index.html' %} class="current"{% endif %} href="/" data-sub="Home">首页</a></li>
+				<li><a{% if page.url contains '/about/' %} class="current"{% endif %} href="/about/" data-sub="About">公司简介</a></li>
+				<li><a{% if page.url contains '/products/' %} class="current"{% endif %} href="/products/" data-sub="Products">产品中心</a></li>
+				<li><a{% if page.url contains '/stores/' %} class="current"{% endif %} href="/stores/" data-sub="Stores">专卖店风采</a></li>
+				<li><a{% if page.url contains '/service/' %} class="current"{% endif %} href="/service/" data-sub="Service">服务中心</a></li>
+				<li><a{% if page.url contains '/contact/' %} class="current"{% endif %} href="/contact/" data-sub="Contact Us">联系我们</a></li>
 				<li class="end"></li>
 			</ul>
 		</div>

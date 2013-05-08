@@ -76,7 +76,7 @@ text-decoration: none;
 overflow: hidden;
 letter-spacing: -1px;
 }
-#header #menu ul li a:hover {
+#header #menu ul li a:hover, #header #menu ul li a.current {
 border-top: 3px solid #D71920;
 text-decoration: none;
 }
