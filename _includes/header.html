@@ -5,7 +5,7 @@
 		</div>
 		<div id="menu">
 			<ul>
-				<li><a{% if page.url == 'index.html' %} class="current"{% endif %} href="/" data-sub="Home">首页</a></li>
+				<li><a{% if page.url == '/index.html' %} class="current"{% endif %} href="/" data-sub="Home">首页</a></li>
 				<li><a{% if page.url contains '/about/' %} class="current"{% endif %} href="/about/" data-sub="About">公司简介</a></li>
 				<li><a{% if page.url contains '/products/' %} class="current"{% endif %} href="/products/" data-sub="Products">产品中心</a></li>
 				<li><a{% if page.url contains '/stores/' %} class="current"{% endif %} href="/stores/" data-sub="Stores">专卖店风采</a></li>
