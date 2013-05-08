@@ -84,8 +84,8 @@ product_categories: [
 {
 	name: "酒店系列",
 	cats: [
-		["QNNSAFE-ke-fang-gui","QNNSAFE客房柜"],
-		["HOTSAFE-ke-fang-gui","HOTSAFE客房柜"],
+		["qnnsafe-ke-fang-gui","QNNSAFE客房柜"],
+		["hotsafe-ke-fang-gui","HOTSAFE客房柜"],
 		["qian-ting-bao-guan-xiang","前厅保管箱"],
 		["qian-ting-tou-bi-gui","前厅投币柜"]
 	]
@@ -97,7 +97,7 @@ product_categories: [
 		["yi-dong-jin-ku","移动金库"],
 		["yin-xing-bao-guan-xiang","银行保管箱"],
 		["xian-jin-tou-bao-ji","现金投包机"],
-		["ATM-gui-yuan-ji","ATM柜员机"],
+		["atm-gui-yuan-ji","ATM柜员机"],
 		["you-zhan-tou-bi-gui","油站投币柜"]
 	]
 },
