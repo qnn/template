@@ -2,15 +2,9 @@
 layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{% for sp in site.pages %}{% capture lastchar %}{{ sp.url | remove:'index.html' | lastchar }}{% endcapture %}{% if lastchar == '/' %}
 <url>
-   <loc>{{ site.url }}/</loc>
-   <lastmod>{{ site.time | date:'%Y-%m-%d' }}</lastmod>
-   <changefreq>daily</changefreq>
-   <priority>1.0</priority>
-</url>{% for sp in site.pages %}{% capture lastchar %}{{ sp.url | lastchar }}{% endcapture %}{% if lastchar == '/' %}
-<url>
-   <loc>{{ site.url }}{{ sp.url }}</loc>
+   <loc>{{ site.url }}{{ sp.url | remove:'index.html' }}</loc>
    <lastmod>{{ site.time | date:'%Y-%m-%d' }}</lastmod>
    <changefreq>daily</changefreq>
    <priority>0.8</priority>

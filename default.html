@@ -48,9 +48,7 @@ more_scripts: ["scripts/sliderkit-1.9.2.min.js"]
 				<div class="tc_l_block">
 					<h3>客户中心<em>Service Center</em></h3>
 					<div class="contactbox">
-						<p>客户咨询时间：早上8:00到下午17:30</p>
-						<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1964506925&amp;site=qq&amp;menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:1964506925:41" alt="产品请咨询我" title="产品请咨询我"></a> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1964506925&amp;site=qq&amp;menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:1964506925:41" alt="产品请咨询我" title="产品请咨询我"></a>
-						<div class="samimg samimg1"></div>
+{{ site.service | markdownify | indent:6 }}
 					</div>
 				</div>
 				
@@ -58,10 +56,7 @@ more_scripts: ["scripts/sliderkit-1.9.2.min.js"]
 					<h3>联系我们<em>Contact Us</em></h3>
 					<div class="bcontent">
 						<img alt="全能保险柜" src="/images/contactus.jpg" width="288" height="109" />
-						<p>全能地址：广东省佛山市顺德大良街道凤翔工业区德翔路8号</p>
-						<p>总部电话：0757-22308180</p>
-						<p>全国免费服务热线：400-830-4555</p>
-						<p>售后服务热线：0757-22308180</p>
+{{ site.contact | markdownify | indent:6 }}
 					</div>
 				</div>
 				
@@ -74,11 +69,8 @@ more_scripts: ["scripts/sliderkit-1.9.2.min.js"]
 						<a class="more" href="/products/">More...</a>
 						产品中心<em>Products</em>
 					</h3>
-					<ul class="productlist">
-{% capture site_posts_size %}{{ site.posts | size | minus:15 }}{% endcapture %}
-{% for post in site.posts limit:15 offset:site_posts_size %}
-						<li><a href="{{ post.url }}"><img src="{{ site.p_img_cdn }}{{ post.images[0] }}" />{{ post.title }}</a></li>
-{% endfor %}
+					<ul class="productlist">{% capture site_posts_size %}{{ site.posts | size | minus:15 }}{% endcapture %}{% for post in site.posts limit:15 offset:site_posts_size %}
+						<li><a href="{{ post.url }}"><img src="{{ site.p_img_cdn }}{{ post.images[0] }}" />{{ post.title }}</a></li>{% endfor %}
 					</ul>
 				</div>
 				

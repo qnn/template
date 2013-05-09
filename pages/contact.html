@@ -22,9 +22,7 @@ title: 联系我们
 			</h2>
 			<div>
 				<div class="divone">
-					<h3>地址：</h3>
-					<h3>联系人：</h3>
-					<h3>联系电话：</h3>
+{{ site.contacthtml | markdownify | indent:5 }}
 				</div>
 				<div class="divtwo">
 					<div id="allmap" style="width: 500px; height: 500px; margin: 20px auto;">	
@@ -34,8 +32,8 @@ title: 联系我们
 					<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.js"></script>
 					<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.css" />
 					<script type="text/javascript">
-					var map=new BMap.Map("map"),poi=new BMap.Point(113.28,22.76);map.centerAndZoom(poi,17);map.enableScrollWheelZoom();
-					var content='<div style="margin:0;line-height:20px;padding:2px;">地址：XXX</div>',searchInfoWindow=new BMapLib.SearchInfoWindow(map,content,{title:"XXXX公司",width:200,height:40,panel:"panel",enableAutoPan:!0,searchTypes:[BMAPLIB_TAB_SEARCH,BMAPLIB_TAB_TO_HERE,BMAPLIB_TAB_FROM_HERE]}),marker=new BMap.Marker(poi);marker.enableDragging();marker.addEventListener("click",function(a){searchInfoWindow.open(marker)});
+					var map=new BMap.Map("map"),poi=new BMap.Point({{ site.coord }});map.centerAndZoom(poi,17);map.enableScrollWheelZoom();
+					var content='<div style="margin:0;line-height:20px;padding:2px;">{{ site.addr }}</div>',searchInfoWindow=new BMapLib.SearchInfoWindow(map,content,{title:"全能{{ site.name }}",width:200,height:40,panel:"panel",enableAutoPan:!0,searchTypes:[BMAPLIB_TAB_SEARCH,BMAPLIB_TAB_TO_HERE,BMAPLIB_TAB_FROM_HERE]}),marker=new BMap.Marker(poi);marker.enableDragging();marker.addEventListener("click",function(a){searchInfoWindow.open(marker)});
 					map.addOverlay(marker);searchInfoWindow.open(marker);
 					</script>
 				</div>
