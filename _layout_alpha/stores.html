@@ -1,0 +1,28 @@
+---
+layout: default
+---
+	<div>
+		<img class="banner" src="/images/banner.jpg" width="998" height="192" />
+	</div>
+	<div class="position">
+		位置：<a href="/">主页</a> &raquo; <a href="/stores/">专卖店风采</a>
+	</div>
+	<div class="pro2cols">
+		<div class="pro2col_a">
+			<div>
+				<ul class="photoitem">{% for photo in site.photos %}
+					<li>
+						<div class="pimage">
+							<a class="thickbox" href="{{ photo.photo }}"><img src="{{ photo.thumb }}" /></a>
+						</div>
+						<div class="pinfo">
+							<p>地址：{{ photo.addre }}</p>
+							<p>联系人：{{ photo.perso }}</p>
+							<p>电话：{{ photo.telep }}</p>
+						</div>
+					</li>{% endfor %}
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
