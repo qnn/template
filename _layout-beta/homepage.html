@@ -1,0 +1,80 @@
+---
+layout: default
+---
+	<div id="main">
+		
+		<div id="slider" class="sliderkit photoslider-bullets">
+			<div class="sliderkit-nav">
+				<div class="sliderkit-nav-clip">
+					<ul>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sliderkit-panels">
+				<div class="sliderkit-panel">
+					<a href="http://www.qnn.com.cn/b-4538.html"><img alt="保险柜" src="http://www.qnn.com.cn/images/index-banner03.jpg" width="1000" height="514" /></a>
+				</div>
+				<div class="sliderkit-panel">
+					<a href="http://www.qnn.com.cn/b-4538.html"><img alt="保险柜" src="http://www.qnn.com.cn/images/index-banner03.jpg" width="1000" height="514" /></a>
+				</div>
+				<div class="sliderkit-panel">
+					<a href="http://www.qnn.com.cn/b-4538.html"><img alt="保险柜" src="http://www.qnn.com.cn/images/index-banner03.jpg" width="1000" height="514" /></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="twocols">
+		
+			<div class="tc_l">
+				
+				<div class="tc_l_block">
+					<h3>
+						<a class="more" href="/about/">More...</a>
+						公司简介<em>About Us</em>
+					</h3>
+					<div class="bcontent">						
+						<img alt="全能保险柜" src="/images/aboutqnn.jpg" width="288" height="191" />
+						<p>广东安能保险柜制造有限公司是以从事保险柜（箱）等安防产品为主的现代化企业，公司拥有占地面积33000平方米的现代化厂房，装备了数百台国际著名品牌的数控冲床、折弯机、激光切割机、以及弧焊机器人等设备，并配备了独立的研发中心、检测中心、寿命实验室，具有世界领先的制造设备和工艺流程，产品涉及家用保险柜、文件保密柜、酒店客房保险箱、枪弹柜、金库门等多个系列近300余款产品，年生产规模超过30万台。</p>
+						<p>公司控股工业集团创始于1935年，保险柜的制造历史可追溯到1939年，其间经历了中国现代工业的历史变迁，上世纪九十年代恢复了保险柜的生产，1999年广东安能保险柜制造有限公司正式成立，旗下“全能”品牌是中国保险柜行业的旗舰品牌。...</p>
+					</div>
+				</div>
+				
+				<div class="tc_l_block">
+					<h3>客户中心<em>Service Center</em></h3>
+					<div class="contactbox">
+{{ site.service | markdownify | indent:6 }}
+					</div>
+				</div>
+				
+				<div class="tc_l_block">
+					<h3>联系我们<em>Contact Us</em></h3>
+					<div class="bcontent">
+						<img alt="全能保险柜" src="/images/contactus.jpg" width="288" height="109" />
+{{ site.contact | markdownify | indent:6 }}
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="tc_r">
+				
+				<div class="tc_r_block">
+					<h3>
+						<a class="more" href="/products/">More...</a>
+						产品中心<em>Products</em>
+					</h3>
+					<ul class="productlist">{% capture site_posts_size %}{{ site.posts | size | minus:15 }}{% endcapture %}{% for post in site.posts limit:15 offset:site_posts_size %}
+						<li><a href="{{ post.url }}"><img src="{{ site.p_img_cdn }}{{ post.images[0] }}" />{{ post.title }}</a></li>{% endfor %}
+					</ul>
+				</div>
+				
+			</div>
+			
+			<div class="clear"></div>
+			
+		</div>
+		
+	</div>

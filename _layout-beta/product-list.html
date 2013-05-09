@@ -1,8 +1,7 @@
 ---
+layout: default
 more_scripts: ["scripts/jquery.lazyload-1.8.4.min.js"]
 ---
-{% include top.html %}
-{% include header.html %}
 	<div>
 		<img class="banner" src="/images/banner.jpg" width="998" height="192" />
 	</div>{% capture current_category %}{{ page.url | replace_first:'/products/','' | replace:'index.html','' | remove:'/' }}{% endcapture %}
@@ -37,5 +36,3 @@ more_scripts: ["scripts/jquery.lazyload-1.8.4.min.js"]
 		</div>
 		<div class="clear"></div>
 	</div>
-{% include footer.html %}
-{% include bottom.html %}

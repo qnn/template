@@ -13,6 +13,9 @@ keywords: 保险柜,保险箱,家用保险柜,家用保险箱,保险柜十大品
 # 网站 URL ，最后勿加入斜杠
 url: http://www.qnn.com.cn
 
+# 模板、主题、版式
+layouts: _layout-beta
+
 # 右上角电话
 telephone: 全能保险柜总部 0757-12345678
 
