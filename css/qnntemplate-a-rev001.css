@@ -434,13 +434,13 @@ color: #333;
 text-decoration: underline;
 }
 .gcontent {
-width: 544px;
+width: 730px;
 margin: 0 auto;
 }
 .rtp {
 float: right;
-width: 270px;
-margin: 20px 0 0 0;
+width: 450px;
+margin: 0;
 }
 .rtp h3 {
 font-size: 16px;
@@ -457,23 +457,6 @@ padding: 3px 0 5px;
 font-size: 13px;
 margin: 0 0 5px 0;
 }
-a.taobao, a.qnnstore {
-width: 164px;
-height: 36px;
-display: block;
-background: url(../images/buybutton.png) no-repeat 0 0;
-line-height: 36px;
-text-indent: 32px;
-font-size: 13px;
-color: #fff;
-text-decoration: none;
-}
-a.taobao:hover, a.qnnstore:hover {
-font-size: 13px;
-color: #fff;
-text-decoration: underline;
-}
-
 #etalage{
 display: none;
 }
@@ -590,12 +573,18 @@ color: #000;
 text-decoration: none;
 float: left;
 background: #fff;
+text-align: center;
+height: 76px;
 }
 a.otherq:hover {
 font-size: 12px;
 color: #fff;
 text-decoration: underline;
 background: #D71920;
+}
+a.otherq img {
+width: 60px;
+height: 60px;
 }
 .otherqcur {
 font-weight: bold;
