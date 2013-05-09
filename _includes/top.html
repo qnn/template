@@ -17,11 +17,11 @@ Generated on {{ site.time }}.{% endif %}
 <meta name="viewport" content="width=1024" />
 <title>{{ page_title | strip_newlines }}</title>
 <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
-<link href="{{ relative }}css/style_for{{ site.layouts }}.css" rel="stylesheet" />{% for item in page.more_css %}
+<link href="{{ relative }}css/layout_stylesheets.css" rel="stylesheet" />{% for item in page.more_css %}
 <link href="{{ item | prepend_relative:relative }}" rel="stylesheet" />{% endfor %}
 <link rel="shortcut icon" href="{{ relative }}favicon.ico" type="image/x-icon" />
 <script src="{{ relative }}scripts/jquery-1.8.3.min.js"></script>
-<script src="{{ relative }}scripts/header_script_for{{ site.layouts }}.js"></script>{% for item in page.more_scripts %}
+<script src="{{ relative }}scripts/layout_header_script.js"></script>{% for item in page.more_scripts %}
 <script src="{{ item | prepend_relative:relative }}"></script>{% endfor %}
 </head>
 
