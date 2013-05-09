@@ -8,12 +8,7 @@ title: 联系我们
 	</div>
 	<div class="pro2cols">
 		<div class="pro2col_l">
-			<h2 class="header">产品中心</h2>
-{% for category in site.product_categories %}
-			<h3><em>{{ category.name }}</em></h3>
-			<ul class="xpro">{% for subcategory in category.cats %}{% capture subcatname %}{{ subcategory[0] }}{% endcapture %}{% for post in site.categories[subcatname] limit:1 %}{% if subcatname == page.category %}{% capture current_category %}{{ category.name }}{% endcapture %}{% capture current_series %}{{ subcategory[1] }}{% endcapture %}{% endif %}
-				<li><a href="{{ post.url }}">{{ subcategory[1] }}</a></li>{% endfor %}{% endfor %}
-			</ul>{% endfor %}
+{% include side_product_list.html %}
 		</div>
 		<div class="pro2col_r">
 			<h2 class="header">

@@ -8,12 +8,7 @@ more_scripts: ["scripts/jquery.lazyload-1.8.4.min.js"]
 	</div>{% capture current_category %}{{ page.url | replace_first:'/products/','' | replace:'index.html','' | remove:'/' }}{% endcapture %}
 	<div class="pro2cols">
 		<div class="pro2col_l">
-			<h2 class="header">产品中心</h2>
-{% for category in site.product_categories %}
-			<h3><em>{{ category.name }}</em></h3>
-			<ul class="xpro">{% for subcategory in category.cats %}{% if current_category == subcategory[0] %}{% capture current_category_name %}{{ subcategory[1] }}{% endcapture%}{% endif %}
-				<li><a href="{% if current_category %}/products/{% endif %}#{{ subcategory[0] }}">{{ subcategory[1] }}</a></li>{% endfor %}
-			</ul>{% endfor %}
+{% include side_product_list.html %}
 		</div>
 		<div class="pro2col_r">
 			<h2 class="header">

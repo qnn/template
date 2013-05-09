@@ -50,6 +50,24 @@ addr: 地址：XXX
 # 产品图片网址，以斜杠结尾
 p_img_cdn: http://www.cqqnn.com.cn/image-pro/
 
+# 专卖店风采
+photos: [
+  {
+    thumb: "http://www.cqqnn.com.cn/templets/default/images/ex.jpg",
+    photo: "http://www.cqqnn.com.cn/templets/default/images/ex.jpg",
+    addre: "广东省佛山市顺德大良街道凤翔工业区德翔路8号",
+    perso: "X先生",
+    telep: "0757-12345678",
+  },
+  {
+    thumb: "http://www.cqqnn.com.cn/templets/default/images/ex.jpg",
+    photo: "http://www.cqqnn.com.cn/templets/default/images/ex.jpg",
+    addre: "广东省佛山市顺德大良街道凤翔工业区德翔路8号",
+    perso: "X先生",
+    telep: "0757-12345678",
+  },
+]
+
 # 分类
 product_categories: [
 {

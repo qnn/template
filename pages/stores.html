@@ -14,19 +14,17 @@ more_scripts: ["scripts/thickbox.min.js"]
 				专卖店风采 <small>Stores</small>
 			</h2>
 			<div>
-				<ul class="photoitem">
+				<ul class="photoitem">{% for photo in site.photos %}
 					<li>
-						<div class="pimage"><a class="thickbox" href="http://www.cqqnn.com.cn/templets/default/images/ex.jpg"><img src="http://www.cqqnn.com.cn/templets/default/images/ex.jpg" /></a></div>
-						<div class="pinfo">地址：<br />联系人：<br />电话：</div>
-					</li>
-					<li>
-						<div class="pimage"><a class="thickbox" href="http://www.cqqnn.com.cn/templets/default/images/ex.jpg"><img src="http://www.cqqnn.com.cn/templets/default/images/ex.jpg" /></a></div>
-						<div class="pinfo">地址：<br />联系人：<br />电话：</div>
-					</li>
-					<li>
-						<div class="pimage"><a class="thickbox" href="http://www.cqqnn.com.cn/templets/default/images/ex.jpg"><img src="http://www.cqqnn.com.cn/templets/default/images/ex.jpg" /></a></div>
-						<div class="pinfo">地址：<br />联系人：<br />电话：</div>
-					</li>
+						<div class="pimage">
+							<a class="thickbox" href="{{ photo.photo }}"><img src="{{ photo.thumb }}" /></a>
+						</div>
+						<div class="pinfo">
+							<p>地址：{{ photo.addre }}</p>
+							<p>联系人：{{ photo.perso }}</p>
+							<p>电话：{{ photo.telep }}</p>
+						</div>
+					</li>{% endfor %}
 				</ul>
 			</div>
 		</div>

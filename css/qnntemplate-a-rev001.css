@@ -674,7 +674,7 @@ width: 500px;
 }
 .photoitem {
 list-style: none;
-width: 500px;
+width: 600px;
 margin: 0 auto;
 }
 .photoitem li {
@@ -696,8 +696,11 @@ height: 100px;
 position: absolute;
 top: 15px;
 left: 200px;
-line-height: 33px;
+}
+.photoitem .pinfo p {
 font-size: 13px;
+line-height: 20px;
+margin: 10px 0;
 }
 /* thickbox */
 * {
