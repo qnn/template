@@ -417,7 +417,7 @@ text-decoration: none;
 #prodslide .sliderkit-nav .sliderkit-nav-next.sliderkit-btn-disable a{background-position:-52px -31px;}
 .onelinecols {
 height: 150px;
-margin: 10px 0;
+margin: 25px 0;
 background: url(../images/greygrad_reverse.png) repeat-x 0 0;
 border: 1px solid #666;
 }
@@ -472,13 +472,12 @@ width: 200px;
 }
 .pro2cols .pro2col_l h2.header {
 text-align: center;
-border-bottom: 1px solid #999;
-background: #CCC;
-font-size: 22px;
+background: #E9E9E9;
+font-size: 20px;
 padding: 6px;
-margin: 0 0 15px 0;
+margin: 15px 10px;
 display: block;
-height: 26px;
+height: 22px;
 }
 .pro2cols .pro2col_l h3 em {
 font-size: 14px;
@@ -535,7 +534,7 @@ overflow:visible;
 .pro2col_r {
 float: left;
 width: 797px;
-border-left: 1px solid #999;
+border-left: 1px dotted #999;
 min-height: 800px;
 height:auto !important; 
 height:800px; 
@@ -543,13 +542,12 @@ overflow:visible;
 }
 .pro2cols .pro2col_r h2.header, .pro2cols .pro2col_a h2.header {
 text-align: left;
-border-bottom: 1px solid #999;
 background: #E2E2E2;
-font-size: 22px;
+font-size: 20px;
 padding: 6px 12px;
-margin: 0 0 15px 0;
+margin: 15px 10px;
 display: block;
-height: 26px;
+height: 22px;
 }
 .pro2cols .pro2col_r h2.header em, .pro2cols .pro2col_a h2.header em {
 float: right;
@@ -740,7 +738,7 @@ padding: 0 10px 10px 10px;
 }
 .pcontent h3 {
 font-size: 18px;
-border-bottom: 1px solid #CCC;
+border-bottom: 1px dotted #CCC;
 padding: 3px 0 10px 0;
 margin: 0;
 }
