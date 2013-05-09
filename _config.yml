@@ -16,6 +16,9 @@ url: http://www.qnn.com.cn
 # 右上角电话
 telephone: 全能保险柜总部 0757-12345678
 
+# 版权，备案号
+copy: 版权所有 &copy; 1999-2013 广东安能保险柜制造有限公司 <a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备</a>
+
 # 侧栏服务
 service: |
   <p>客户咨询时间：早上8:00到下午17:30</p>
