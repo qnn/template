@@ -535,12 +535,13 @@ width: 200px;
 .pro2cols .pro2col_l h2.header {
 text-align: center;
 border-bottom: 1px solid #999;
-background: #CCC;
+background: url(../images/greygrad.png) repeat-x 0 0;
 font-size: 22px;
-padding: 6px;
+padding: 12px;
 margin: 0 0 15px 0;
 display: block;
 height: 26px;
+box-shadow: 0 1px 5px 0 #111;
 }
 .pro2cols .pro2col_l h3 em {
 font-size: 14px;
@@ -597,7 +598,7 @@ overflow:visible;
 .pro2col_r {
 float: left;
 width: 797px;
-border-left: 1px solid #999;
+border-right: 1px solid #999;
 min-height: 800px;
 height:auto !important; 
 height:800px; 
@@ -606,18 +607,19 @@ overflow:visible;
 .pro2cols .pro2col_r h2.header, .pro2cols .pro2col_a h2.header {
 text-align: left;
 border-bottom: 1px solid #999;
-background: #E2E2E2;
+background: url(../images/greygrad.png) repeat-x 0 0;
 font-size: 22px;
-padding: 6px 12px;
+padding: 12px 12px;
 margin: 0 0 15px 0;
 display: block;
 height: 26px;
+box-shadow: 0 1px 5px 0 #111;
 }
 .pro2cols .pro2col_r h2.header em, .pro2cols .pro2col_a h2.header em {
 float: right;
 font-size: 13px;
 font-style: normal;
-line-height: 27px;
+line-height: 28px;
 color: #333;
 }
 .pro2cols .pro2col_r h2.header em a, .pro2cols .pro2col_a h2.header em a {
