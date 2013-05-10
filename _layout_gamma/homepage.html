@@ -6,28 +6,20 @@ layout: default
 			<div id="slider" class="sliderkit photoslider-bullets">
 				<div class="sliderkit-nav">
 					<div class="sliderkit-nav-clip">
-						<ul>
-							<li><a href="javascript:;"><img src="http://www.qnn.com.cn/images/index-banner03.jpg" /></a></li>
-							<li><a href="javascript:;"><img src="http://www.qnn.com.cn/images/index-banner03.jpg" /></a></li>
-							<li><a href="javascript:;"><img src="http://www.qnn.com.cn/images/index-banner03.jpg" /></a></li>
+						<ul>{% for slide in site.slider %}
+							<li><a href="javascript:;"><img src="{{ slide.image }}" /></a></li>{% endfor %}
 						</ul>
 					</div>
 				</div>
-				<div class="sliderkit-panels">
+				<div class="sliderkit-panels">{% for slide in site.slider %}
 					<div class="sliderkit-panel">
-						<a href="http://www.qnn.com.cn/b-4538.html"><img alt="保险柜" src="http://www.qnn.com.cn/images/index-banner03.jpg" width="1000" height="514" /></a>
-					</div>
-					<div class="sliderkit-panel">
-						<a href="http://www.qnn.com.cn/b-4538.html"><img alt="保险柜" src="http://www.qnn.com.cn/images/index-banner03.jpg" width="1000" height="514" /></a>
-					</div>
-					<div class="sliderkit-panel">
-						<a href="http://www.qnn.com.cn/b-4538.html"><img alt="保险柜" src="http://www.qnn.com.cn/images/index-banner03.jpg" width="1000" height="514" /></a>
-					</div>
+						<a href="{{ slide.link }}"><img alt="保险柜" src="{{ slide.image }}" /></a>
+					</div>{% endfor %}
 				</div>
 			</div>
 			<div id="servicecontainer">
 				<div id="hmpgservice">
-					{{ site.service | markdownify | indent:4 }}
+{{ site.service | markdownify | indent:4 }}
 				</div>
 			</div>
 		</div>
@@ -84,9 +76,6 @@ layout: default
 				<h3 class="bctitle">专卖店风采 <small>Stores</small></h3>
 				<div class="gall">
 					<ul>{% for photo in site.photos limit:4 %}
-						<li>
-							<a href="/stores/"><img src="{{ photo.thumb }}" /></a>
-						</li>
 						<li>
 							<a href="/stores/"><img src="{{ photo.thumb }}" /></a>
 						</li>{% endfor %}

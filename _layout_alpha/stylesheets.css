@@ -105,6 +105,16 @@ color: #666;
 height: 20px;
 line-height: 20px;
 }
+#header #telephone a {
+color: #666;
+font-size: 14px;
+text-decoration: none;
+}
+#header #telephone a:hover {
+color: #000;
+font-size: 14px;
+text-decoration: none;
+}
 #main {
 
 }
@@ -298,7 +308,8 @@ margin: 0;
 box-shadow: 0 2px 3px #666;
 }
 .photoslider-bullets{width:998px;height:514px;}
-.photoslider-bullets .sliderkit-nav{position:absolute;top:488px;left:10px;}
+.photoslider-bullets img {width:998px;height:514px;}
+.photoslider-bullets .sliderkit-nav{position:absolute;top:488px;left:915px;}
 .photoslider-bullets .sliderkit-nav-clip ul li{float:left;margin:0 2px 0 0;}
 .photoslider-bullets .sliderkit-nav-clip ul li a{width:16px;height:16px;background:#fff;}
 .photoslider-bullets .sliderkit-nav-clip ul li.sliderkit-selected a{background:#DB291D;}
@@ -898,7 +909,7 @@ width: 500px;
 }
 .photoitem {
 list-style: none;
-width: 600px;
+width: 900px;
 margin: 0 auto;
 }
 .photoitem li {
