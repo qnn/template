@@ -1,24 +1,21 @@
-{% if page.fulltitle %}
-{{ page.fulltitle }}
-{% else %}
 {% if page.url contains '/products/' %}
-产品中心
+	产品中心 - 
 {% else %}
-{% for category in site.product_categories %}
-{% for subcategory in category.cats %}
-{% capture subcatname %}{{ subcategory[0] }}{% endcapture %}
-{% for post in site.categories[subcatname] limit:1 %}
-{% if subcatname == page.category %}
-{% capture current_category %}{{ category.name }}{% endcapture %}
-{% capture current_series %}{{ subcategory[1] }}{% endcapture %}
+	{% for category in site.product_categories %}
+		{% for subcategory in category.cats %}
+		{% capture subcatname %}{{ subcategory[0] }}{% endcapture %}
+			{% for post in site.categories[subcatname] limit:1 %}
+				{% if subcatname == page.category %}
+					{% capture current_category %}{{ category.name }}{% endcapture %}
+					{% capture current_series %}{{ subcategory[1] }}{% endcapture %}
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
+	{% endfor %}
+	{{ current_series }}
+	{{ page.title }}
+	{% if page.path contains '/_posts/' %}
+		 - 全能保险柜 - 
+	{% endif %}
 {% endif %}
-{% endfor %}
-{% endfor %}
-{% endfor %}
-{{ current_series }}
-{{ page.title }}
-{% if page.path contains '/_posts/' %}
- - 全能保险柜
-{% endif %}
-{% endif %} - {{ site.title }}
-{% endif %}
+{{ site.title }}
