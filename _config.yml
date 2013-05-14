@@ -192,7 +192,7 @@ product_categories: [
 ]
 
 # 生成的网站不包含的文件
-exclude: ['README.md']
+exclude: ['README.md', 'LICENSE']
 
 # markdown
 markdown: rdiscount
