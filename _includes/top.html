@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <!--
-Web Design by caiguanhao <caiguanhao@gmail.com>.
-Source of this page can be found on:
-* https://github.com/qnn/template{% if page.location %}/blob/master{{ page.location }}
-* https://raw.github.com/qnn/template/master{{ page.location }}{% endif %}
+By: caiguanhao <caiguanhao@gmail.com>. (c) 2013 All rights reserved.
+License: https://raw.github.com/qnn/qnn-agent-sites/master/LICENSE
 Powered by Jekyll, the blog-aware, static site generator in Ruby.{% if page.url == '/index.html' %}
 Generated on {{ site.time }}.{% endif %}
+
+Source of this website can be found on GitHub:
+* https://github.com/qnn/qnn-agent-sites/blob/master/configs/{{ site.url | remove:'http://www.' }}/_config.yml
+* https://raw.github.com/qnn/qnn-agent-sites/master/configs/{{ site.url | remove:'http://www.' }}/_config.yml{% if page.path contains '/_posts/' %}
+* https://github.com/qnn/template{% if page.location %}/blob/master{{ page.location }}
+* https://raw.github.com/qnn/template/master{{ page.location }}{% endif %}{% endif %}
+* https://github.com/qnn/template/tree/master/{{ site.layouts }}
 -->
 <html>
 {% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}{%capture page_title %}{% include titles.html %}{% endcapture %}
