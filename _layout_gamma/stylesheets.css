@@ -267,6 +267,7 @@ border: 1px solid #aaa;
 border-top: 2px solid #D71920;
 background: #EFEFEF url(../images/colheader.png) no-repeat 0 0;
 margin: 0 0 10px;
+overflow: hidden;
 }
 .bradcontainer .bctitle {
 color: #FFF;
@@ -540,7 +541,7 @@ border: 1px solid #999;
 margin: 0 0 10px 0;
 }
 .pro2col_l {
-float: left;
+float: right;
 width: 200px;
 }
 .pro2cols .pro2col_l h2.header {
@@ -614,6 +615,7 @@ min-height: 800px;
 height:auto !important; 
 height:800px; 
 overflow:visible;
+overflow-x: hidden;
 }
 .pro2cols .pro2col_r h2.header, .pro2cols .pro2col_a h2.header {
 text-align: left;
@@ -625,6 +627,7 @@ margin: 0 0 15px 0;
 display: block;
 height: 26px;
 box-shadow: 0 1px 5px 0 #111;
+overflow: hidden;
 }
 .pro2cols .pro2col_r h2.header em, .pro2cols .pro2col_a h2.header em {
 float: right;
