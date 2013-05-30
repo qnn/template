@@ -873,27 +873,24 @@ margin: 0 auto;
 .photoitem li {
 border: 1px solid #D3DBE3;
 margin: 20px;
-height: 130px;
 position: relative;
 }
 .photoitem .pimage {
-position: absolute;
-top: 15px;
-left: 15px;
+float: left;
+padding: 13px 30px;
 }
 .photoitem .pimage img {
 width: 150px;
 height: 100px;
 }
 .photoitem .pinfo {
-position: absolute;
-top: 10px;
-left: 200px;
+float: left;
+padding: 5px 0;
 }
 .photoitem .pinfo p {
 font-size: 13px;
 line-height: 20px;
-margin: 6px 0;
+margin: 8px 0;
 }
 /* thickbox */
 #TB_window {
