@@ -202,3 +202,6 @@ permalink: :title.html
 
 # 分页项目数，忽略
 paginate: 20
+
+# Jekyll 1.0.2开始permalinks默认为相对，为了兼容，暂时将其设置为false
+relative_permalinks: false
