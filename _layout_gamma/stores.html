@@ -17,6 +17,7 @@ layout: default
 							<a class="thickbox" href="{{ photo.photo }}"><img src="{{ photo.thumb }}" /></a>
 						</div>
 						<div class="pinfo">
+							{% if photo.store %}<p>销售网点：{{ photo.store }}</p>{% endif %}
 							<p>联系人：{{ photo.perso }}</p>
 							<p>电话：{{ photo.telep }}</p>
 							<p>地址：{{ photo.addre }}</p>
