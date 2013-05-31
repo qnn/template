@@ -103,7 +103,7 @@ telephone: <a href="http://www.qnn.com.cn/" target="_blank">全能保险柜总�
 ### 下面的不用改 ###
 
 # 产品图片网址，以斜杠结尾
-p_img_cdn: http://test.html9.com/image-pro/
+p_img_cdn: http://test.html9.com/products/
 
 # 分类
 product_categories:
