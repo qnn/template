@@ -14,7 +14,7 @@ module LiquidExtend
     input.gsub('{PRODUCT_IMAGES}', cdn)
   end
   def indent(input, num)
-    input.strip.gsub("\n\n","\n").gsub(/^/m, (["\t"] * num).join)
+    input.strip.gsub(/\n{2,}/,"\n").gsub(/^<li>/m, "\t\\0").gsub(/^/m, (["\t"] * num).join)
   end
   
   Liquid::Template.register_filter self
