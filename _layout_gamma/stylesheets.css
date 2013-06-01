@@ -1054,3 +1054,13 @@ filter:alpha(opacity=0);
 #toTop:active, #toTop:focus {
 outline:none;
 }
+
+.enterprise_qq, .individual_qq {
+background: url(../images/qqtalk.png) no-repeat;
+display: block;
+width: 77px;
+height: 22px;
+text-indent: -9999px;
+float: left;
+margin: 0 3px 15px 0;
+}

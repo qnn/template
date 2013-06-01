@@ -69,6 +69,14 @@ $(function(){
 		$("img.lazy").lazyload({ threshold : 400 });
 	}
 	$().UItoTop({ scrollSpeed:100 });
+	$('.enterprise_qq').click(function(e){
+		e.preventDefault();
+		window.open('http://b.qq.com/webc.htm?new=0&sid=4008304555&eid=218808P8z8p8Q8z8K8x8P&o=http://www.qnn.com.cn&q=7&ref='+document.location, '_blank', 'height=544, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');
+	});
+	$('.individual_qq').click(function(e){
+		e.preventDefault();
+		window.open('http://wpa.qq.com/msgrd?v=3&uin='+$(this).data('qq')+'&site=qq&menu=yes', '_blank', 'height=544, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');
+	});
 });
 /* totop */
 (function(a){a.fn.UItoTop=function(e){var b=a.extend({text:"To Top",min:200,inDelay:600,outDelay:400,containerID:"toTop",containerHoverID:"toTopHover",scrollSpeed:1200,easingType:"linear"},e),d="#"+b.containerID,c="#"+b.containerHoverID;a("body").append($('<a href="javascript:;" id="'+b.containerID+'">'+b.text+'</a>').click(function(){window.scrollTo(0, 0);}));a(d).hide().on("click.UItoTop",function(){a("html, body").animate({scrollTop:0},b.scrollSpeed,b.easingType);a("#"+b.containerHoverID,this).stop().animate({opacity:0},b.inDelay,b.easingType);return!1}).prepend('<span id="'+
