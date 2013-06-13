@@ -15,7 +15,7 @@ layout: default
 			</h2>
 			<img src="/images/qnn.jpg" width="797" height="185" />
 			<div class="ucontent">
-{% capture about %}{% include about_company.md %}{% endcapture %}{{ about | markdownify | indent:4 }}
+{% capture about %}{% if site.about %}{{ site.about }}{% else %}{% include about_company.md %}{% endif %}{% endcapture %}{{ about | markdownify | indent:4 }}
 			</div>
 		</div>
 		<div class="clear"></div>
