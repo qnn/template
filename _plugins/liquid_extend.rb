@@ -16,6 +16,9 @@ module LiquidExtend
   def indent(input, num)
     input.strip.gsub(/\n{2,}/,"\n").gsub(/^<li>/m, "\t\\0").gsub(/^/m, (["\t"] * num).join)
   end
+  def better_page_title(input)
+    input.gsub(/\n|\t|\s/,"")
+  end
   
   Liquid::Template.register_filter self
 end
