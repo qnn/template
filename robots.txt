@@ -2,16 +2,9 @@
 layout: nil
 ---
 User-agent: *
-Disallow: /javascripts/
-Disallow: /stylesheets/
-Disallow: /image-news/
-Disallow: /image-pro/
-Disallow: /image-videos/
+Disallow: /css/
 Disallow: /images/
-Disallow: /survey/
-Disallow: /uploads/
+Disallow: /scripts/
 Disallow: /favicon.ico
-Disallow: /stores.json
-Disallow: /survey.php
 
 Sitemap: {{ site.url }}/Sitemap.xml
