@@ -1,3 +1,6 @@
+---
+layout: nil
+---
 User-agent: *
 Disallow: /javascripts/
 Disallow: /stylesheets/
@@ -11,4 +14,4 @@ Disallow: /favicon.ico
 Disallow: /stores.json
 Disallow: /survey.php
 
-Sitemap: {{ site.url }}{{ page.url | replace:'index.html','' }}Sitemap.xml
+Sitemap: {{ site.url }}/Sitemap.xml
