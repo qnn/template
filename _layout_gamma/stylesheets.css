@@ -272,7 +272,7 @@ overflow: hidden;
 .bradcontainer .bctitle {
 color: #FFF;
 font-size: 18px;
-padding: 6px;
+padding: 3px;
 text-indent: 15px;
 }
 .bradcontainer .bctitle small {
@@ -647,12 +647,12 @@ color: #333;
 text-decoration: underline;
 }
 .gcontent {
-width: 730px;
+width: 830px;
 margin: 0 auto;
 }
 .rtp {
 float: right;
-width: 450px;
+width: 535px;
 margin: 0;
 }
 .rtp h3 {
@@ -721,15 +721,16 @@ div.etalage_description.rtl{ direction:rtl }
 height: 25px;
 overflow: hidden;
 margin: 30px 0 10px !important;
+border-bottom: 1px solid #D71920;
 }
 .tabbtns ul {
 list-style: none;
 }
 .tabbtns li {
 float: left;
-width: 96px;
+width: 138px;
 height: 25px;
-margin: 0 5px 0 0;
+margin: 0 20px 0 0;
 }
 .tabbtns a {
 font-size: 13px;
@@ -743,7 +744,7 @@ text-decoration: none;
 background: #D71920;
 }
 .tabbtn {
-width: 96px;
+width: 138px;
 height: 25px;
 display: block;
 line-height: 25px;
@@ -779,7 +780,7 @@ line-height: 20px;
 a.otherq {
 border: 1px solid #c8c9cd;
 padding: 3px;
-margin: 0 3px 3px 0;
+margin: 0 7px 7px 0;
 display: block;
 font-size: 12px;
 color: #000;
@@ -863,7 +864,7 @@ padding: 15px;
 }
 .divtwo {
 float: left;
-width: 740px;
+width: 990px;
 }
 .photoitem {
 list-style: none;
