@@ -647,12 +647,15 @@ color: #333;
 text-decoration: underline;
 }
 .gcontent {
-width: 830px;
+width: 1000px;
 margin: 0 auto;
+}
+.lfp {
+margin: 0 0 0 25px;
 }
 .rtp {
 float: right;
-width: 535px;
+width: 680px;
 margin: 0;
 }
 .rtp h3 {
@@ -664,7 +667,7 @@ list-style: none;
 }
 .rtpul li {
 font-size: 13px;
-padding: 3px 0 5px;
+padding: 6px 0 6px;
 }
 .rtpul li div {
 font-size: 13px;
@@ -717,6 +720,18 @@ background: white;
 div.etalage_description{ position:absolute; bottom:0; left:0; z-index:999 }
 div.etalage_description.rtl{ direction:rtl }
 
+a.taobao {
+  width: 164px;
+  height: 36px;
+  display: block;
+  background: url(/images/buynow.png) no-repeat;
+  line-height: 36px;
+  text-indent: 50px;
+  font-size: 13px;
+  color: #FFF;
+  text-decoration: none;
+}
+
 .tabbtns {
 height: 25px;
 overflow: hidden;
@@ -730,7 +745,7 @@ list-style: none;
 float: left;
 width: 138px;
 height: 25px;
-margin: 0 20px 0 0;
+margin: 0 0 0 20px;
 }
 .tabbtns a {
 font-size: 13px;
@@ -761,6 +776,9 @@ a.sel:hover {
 text-decoration: none;
 }
 
+.mc4 {
+  padding: 0 10px;
+}
 .mc4 h2 {
 font-size: 16px;
 margin: 10px 0;
@@ -780,7 +798,7 @@ line-height: 20px;
 a.otherq {
 border: 1px solid #c8c9cd;
 padding: 3px;
-margin: 0 7px 7px 0;
+margin: 6px 12px 12px 0;
 display: block;
 font-size: 12px;
 color: #000;
