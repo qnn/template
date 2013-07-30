@@ -101,7 +101,7 @@ width: 7px;
 }
 #header #telephone {
 position: absolute;
-top: 19px;
+top: 12px;
 left: 750px;
 background: url(../images/telephone.png) no-repeat 0 0;
 text-indent: 28px;
@@ -112,7 +112,7 @@ line-height: 20px;
 }
 #header #telephones {
 position: absolute;
-top: 30px;
+top: 38px;
 left: 750px;
 background: url(../images/telephone.png) no-repeat 0 0;
 text-indent: 28px;
