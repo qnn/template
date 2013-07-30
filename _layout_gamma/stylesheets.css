@@ -107,7 +107,18 @@ background: url(../images/telephone.png) no-repeat 0 0;
 text-indent: 28px;
 font-size: 14px;
 color: #666;
-height: 40px;
+height: 20px;
+line-height: 20px;
+}
+#header #telephones {
+position: absolute;
+top: 30px;
+left: 750px;
+background: url(../images/telephone.png) no-repeat 0 0;
+text-indent: 28px;
+font-size: 14px;
+color: #666;
+height: 20px;
 line-height: 20px;
 }
 #header #telephone a {
