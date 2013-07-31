@@ -290,6 +290,14 @@ text-indent: 15px;
 color: #fff;
 font-size: 12px;
 }
+.bradcontainer .bctitle a {
+color: #FFF;
+text-decoration: none;
+}
+.bradcontainer .bctitle a:hover {
+color: #FFF;
+text-decoration: none;
+}
 .switcher {
 height: 160px;
 }
