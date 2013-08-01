@@ -13,10 +13,10 @@ images: [
 ]
 
 page1: |
-  <img alt="保险柜钢化玻璃电子钥匙柜功能特征" border="0" height="507" src="{PRODUCT_IMAGES}bldzycg-gn.jpg" width="538" />
+  <img alt="保险柜钢化玻璃电子钥匙柜功能特征" border="0" height="507" src="{PRODUCT_IMAGES}products/bldzycg-gn.jpg" width="538" />
 
 page2: |
-  <img alt="保险箱钢化玻璃电子钥匙柜产品参数" border="0" height="237" src="{PRODUCT_IMAGES}bldzycg-cpcs.jpg" width="538" />
+  <img alt="保险箱钢化玻璃电子钥匙柜产品参数" border="0" height="237" src="{PRODUCT_IMAGES}products/bldzycg-cpcs.jpg" width="538" />
 
 page3: |
   <h3>

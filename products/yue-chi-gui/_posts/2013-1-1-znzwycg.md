@@ -13,12 +13,12 @@ images: [
 ]
 
 page1: |
-  <img alt="家用保险柜智能指纹钥匙柜功能特征01" border="0" height="612" src="{PRODUCT_IMAGES}znzwycg-gn-01.jpg" width="538" />
+  <img alt="家用保险柜智能指纹钥匙柜功能特征01" border="0" height="612" src="{PRODUCT_IMAGES}products/znzwycg-gn-01.jpg" width="538" />
   
-  <img alt="家用保险柜智能指纹钥匙柜功能特征02" border="0" height="514" src="{PRODUCT_IMAGES}znzwycg-gn-02.jpg" width="538" />
+  <img alt="家用保险柜智能指纹钥匙柜功能特征02" border="0" height="514" src="{PRODUCT_IMAGES}products/znzwycg-gn-02.jpg" width="538" />
 
 page2: |
-  <img alt="保险柜智能指纹钥匙柜产品参数" border="0" height="203" src="{PRODUCT_IMAGES}znzwycg-cpcs.jpg" width="538" />
+  <img alt="保险柜智能指纹钥匙柜产品参数" border="0" height="203" src="{PRODUCT_IMAGES}products/znzwycg-cpcs.jpg" width="538" />
 
 page3: |
   <h3>

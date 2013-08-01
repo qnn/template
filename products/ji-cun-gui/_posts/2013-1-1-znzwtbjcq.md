@@ -13,10 +13,10 @@ images: [
 ]
 
 page1: |
-  <img alt="家用保险柜智能指纹投币寄存柜功能特征" border="0" height="480" src="{PRODUCT_IMAGES}znzwtbjcq-gn.jpg" width="538" />
+  <img alt="家用保险柜智能指纹投币寄存柜功能特征" border="0" height="480" src="{PRODUCT_IMAGES}products/znzwtbjcq-gn.jpg" width="538" />
 
 page2: |
-  <img alt="家用保险箱智能指纹投币寄存柜产品参数" border="0" height="258" src="{PRODUCT_IMAGES}znzwtbjcq-cpcs.jpg" width="538" />
+  <img alt="家用保险箱智能指纹投币寄存柜产品参数" border="0" height="258" src="{PRODUCT_IMAGES}products/znzwtbjcq-cpcs.jpg" width="538" />
 
 page3: |
   <h3>
