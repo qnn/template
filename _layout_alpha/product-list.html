@@ -14,7 +14,7 @@ more_scripts: ["scripts/jquery.lazyload-1.8.4.min.js"]
 {% if current_category != '' %}
 				<h3>{{ current_category_name }}</h3>
 				<div class="prodsublist">{% for post in site.categories[current_category] %}
-							<div class="psli"><a href="{{ post.url }}"><img src="{{ site.p_img_cdn }}{{ post.images[0] }}" />{{ post.name }}</a></div>
+							<div class="psli"><a href="{{ post.url }}"><img src="{{ site.p_img_cdn }}products/{{ post.images[0] }}" />{{ post.name }}</a></div>
 				{% endfor %}
 				<div class="clear"></div>
 				</div>
@@ -23,7 +23,7 @@ more_scripts: ["scripts/jquery.lazyload-1.8.4.min.js"]
 				<a name="{{ subcategory[0] }}"></a>
 				<h3>{{ subcategory[1] }}</h3>
 				<div class="prodsublist">{% capture subcatname %}{{ subcategory[0] }}{% endcapture %}{% for post in site.categories[subcatname] %}
-					<div class="psli"><a href="{{ post.url }}"><img class="lazy" data-original="{{ site.p_img_cdn }}{{ post.images[0] }}" src="/images/white.gif" />{{ post.name }}</a></div>{% endfor %}
+					<div class="psli"><a href="{{ post.url }}"><img class="lazy" data-original="{{ site.p_img_cdn }}products/{{ post.images[0] }}" src="/images/white.gif" />{{ post.name }}</a></div>{% endfor %}
 					<div class="clear"></div>
 				</div>
 				<div class="clear"></div>

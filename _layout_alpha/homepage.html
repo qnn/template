@@ -38,11 +38,11 @@ layout: default
 				<div class="mcblock">
 					<h3><a class="morelink" href="/products/">More...</a> 产品展示 Showcase</h3>
 					<ul class="mccase">{% capture site_posts_size %}{{ site.posts | size | minus:3 }}{% endcapture %}{% for post in site.posts limit:3 offset:site_posts_size %}
-						<li class="graygrad"><a href="{{ post.url }}"><img src="{{ site.p_img_cdn }}{{ post.images[0] }}" />{{ post.title }}</a></li>{% endfor %}
+						<li class="graygrad"><a href="{{ post.url }}"><img src="{{ site.p_img_cdn }}products/{{ post.images[0] }}" />{{ post.title }}</a></li>{% endfor %}
 					</ul>
 					<div class="clear"></div>
 					<ul class="mccase">{% capture site_posts_size %}{{ site.posts | size | minus:6 }}{% endcapture %}{% for post in site.posts limit:3 offset:site_posts_size %}
-						<li class="graygrad"><a href="{{ post.url }}"><img src="{{ site.p_img_cdn }}{{ post.images[0] }}" />{{ post.title }}</a></li>{% endfor %}
+						<li class="graygrad"><a href="{{ post.url }}"><img src="{{ site.p_img_cdn }}products/{{ post.images[0] }}" />{{ post.title }}</a></li>{% endfor %}
 					</ul>
 					<div class="clear"></div>
 				</div>
