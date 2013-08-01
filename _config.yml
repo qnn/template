@@ -118,7 +118,7 @@ telephone: 全能保险柜总部：400-830-4555
 ### 下面的不用改 ###
 
 # 产品图片网址，以斜杠结尾
-p_img_cdn: http://stores.qnnimg.com/products/
+p_img_cdn: http://stores.qnnimg.com/
 
 # 分类
 product_categories:
