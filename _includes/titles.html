@@ -1,7 +1,7 @@
-{% if page.title %}
 {% if page.url contains '/products/' %}
-	产品中心-
+	产品中心-全能保险柜{{ site.name }}
 {% else %}
+{% if page.title %}
 	{% for category in site.product_categories %}
 		{% for subcategory in category.cats %}
 		{% capture subcatname %}{{ subcategory[0] }}{% endcapture %}
@@ -14,9 +14,8 @@
 		{% endfor %}
 	{% endfor %}
 	{{ current_series }}
-	{{ page.title }}-
-{% endif %}
-全能保险柜{{ site.name }}
+	{{ page.title }}-全能保险柜{{ site.name }}
 {% else %}
 {{ site.title }}
+{% endif %}
 {% endif %}
