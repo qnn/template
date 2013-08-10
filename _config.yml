@@ -41,16 +41,16 @@ beian: 粤ICP备12015444号-
 # _layout_gamma: 998 x 350px
 # _layout_delta: 720 x 288px
 slider:
-  - image: http://test.html9.com/images/alpha-banner01.jpg
+  - image: http://stores.qnnimg.com/banners/alpha-banner01.jpg
     link:  /b-7348.html
 
-  - image: http://test.html9.com/images/alpha-banner02.jpg
+  - image: http://stores.qnnimg.com/banners/alpha-banner02.jpg
     link:  /f-2714cke.html
 
-  - image: http://test.html9.com/images/alpha-banner03.jpg
+  - image: http://stores.qnnimg.com/banners/alpha-banner03.jpg
     link:  /asafe.html
 
-  - image: http://test.html9.com/images/alpha-banner04.jpg
+  - image: http://stores.qnnimg.com/banners/alpha-banner04.jpg
     link:  /fg-5840br.html
 
 
@@ -66,8 +66,8 @@ service: |
 
 # 专卖店风采（ - 表示数组项目，content 用 markdown 格式）
 photos:
-  - thumb: http://test.html9.com/images/qnnsafe01.jpg
-    photo: http://test.html9.com/images/qnnsafe01.jpg
+  - thumb: http://stores.qnnimg.com/photos/150px/qnnsafe01.jpg
+    photo: http://stores.qnnimg.com/photos/qnnsafe01.jpg
     content: |
       **销售网点**：XXX专卖店1
 
@@ -77,8 +77,8 @@ photos:
 
       **地址**：广东省佛山市顺德大良街道凤翔工业区德翔路8号
 
-  - thumb: http://test.html9.com/images/qnnsafe01.jpg
-    photo: http://test.html9.com/images/qnnsafe01.jpg
+  - thumb: http://stores.qnnimg.com/photos/150px/qnnsafe01.jpg
+    photo: http://stores.qnnimg.com/photos/qnnsafe01.jpg
     content: |
       **销售网点**：XXX专卖店2
 
