@@ -1,3 +1,4 @@
+{% if page.title %}
 {% if page.url contains '/products/' %}
 	产品中心-
 {% else %}
@@ -16,3 +17,6 @@
 	{{ page.title }}-
 {% endif %}
 全能保险柜{{ site.name }}
+{% else %}
+{{ site.title }}
+{% endif %}
