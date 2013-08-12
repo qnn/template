@@ -66,8 +66,8 @@ service: |
 
 # 专卖店风采（ - 表示数组项目，content 用 markdown 格式）
 photos:
-  - thumb: http://stores.qnnimg.com/photos/150px/qnnsafe01.jpg
-    photo: http://stores.qnnimg.com/photos/qnnsafe01.jpg
+  - thumb: http://stores.qnnimg.com/photos/150px/default.jpg
+    photo: http://stores.qnnimg.com/photos/default.jpg
     content: |
       **销售网点**：XXX专卖店1
 
@@ -77,8 +77,8 @@ photos:
 
       **地址**：广东省佛山市顺德大良街道凤翔工业区德翔路8号
 
-  - thumb: http://stores.qnnimg.com/photos/150px/qnnsafe01.jpg
-    photo: http://stores.qnnimg.com/photos/qnnsafe01.jpg
+  - thumb: http://stores.qnnimg.com/photos/150px/default.jpg
+    photo: http://stores.qnnimg.com/photos/default.jpg
     content: |
       **销售网点**：XXX专卖店2
 
@@ -218,7 +218,7 @@ exclude: ['README.md', 'LICENSE']
 markdown: rdiscount
 
 # 链接格式
-permalink: :title.html
+permalink: /products/:title.html
 
 # Jekyll 1.0.2开始permalinks默认为相对，为了兼容，暂时将其设置为false
 relative_permalinks: false
