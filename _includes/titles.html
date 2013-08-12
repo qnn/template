@@ -1,21 +1,27 @@
 {% if page.url contains '/products/' %}
-	产品中心-全能保险柜{{ site.name }}
+  {% if page.category %}
+  	{% for category in site.product_categories %}
+  		{% for subcategory in category.cats %}
+  		{% capture subcatname %}{{ subcategory[0] }}{% endcapture %}
+  			{% for post in site.categories[subcatname] limit:1 %}
+  				{% if subcatname == page.category %}
+  					{% capture current_category %}{{ category.name }}{% endcapture %}
+  					{% capture current_series %}{{ subcategory[1] }}{% endcapture %}
+  				{% endif %}
+  			{% endfor %}
+  		{% endfor %}
+  	{% endfor %}
+    {{ site.keywords }}
+  	{{ current_series }}
+    {{ page.title }}
+  {% else%}
+  	产品中心
+  {% endif %}
+  -全能保险柜{{ site.name }}
 {% else %}
-{% if page.title %}
-	{% for category in site.product_categories %}
-		{% for subcategory in category.cats %}
-		{% capture subcatname %}{{ subcategory[0] }}{% endcapture %}
-			{% for post in site.categories[subcatname] limit:1 %}
-				{% if subcatname == page.category %}
-					{% capture current_category %}{{ category.name }}{% endcapture %}
-					{% capture current_series %}{{ subcategory[1] }}{% endcapture %}
-				{% endif %}
-			{% endfor %}
-		{% endfor %}
-	{% endfor %}
-	{{ current_series }}
-	{{ page.title }}-全能保险柜{{ site.name }}
-{% else %}
-{{ site.title }}
-{% endif %}
+  {% if page.title %}
+  	{{ page.title }}-全能保险柜{{ site.name }}
+  {% else %}
+    {{ site.title }}
+  {% endif %}
 {% endif %}
