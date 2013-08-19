@@ -1,5 +1,6 @@
 ---
 layout: default
+more_scripts: ["scripts/sliderkit-1.9.2.min.js"]
 ---
 	<div id="main">
 		<div id="slidercontainer">
@@ -76,11 +77,19 @@ layout: default
 			<div class="bradcontainer">
 				<h3 class="bctitle"><a href="/stores/">专卖店风采 <small>Stores</small></a></h3>
 				<div class="gall">
-					<ul>{% for photo in site.photos limit:4 %}
-						<li>
-							<a href="/stores/"><img src="{{ photo.thumb }}" /></a>
-						</li>{% endfor %}
-					</ul>
+					<div id="galslide" class="sliderkit">
+						<div class="sliderkit-nav">
+							<div class="sliderkit-nav-clip">
+								<ul>{% for photo in site.photos %}
+									<li>
+										<a href="/stores/"><img src="{{ photo.thumb }}" /></a>
+									</li>{% endfor %}
+								</ul>
+							</div>
+							<div class="sliderkit-btn sliderkit-nav-btn sliderkit-nav-prev"><a href="#" title="Scroll to the left"><span>Previous</span></a></div>
+              <div class="sliderkit-btn sliderkit-nav-btn sliderkit-nav-next"><a href="#" title="Scroll to the right"><span>Next</span></a></div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="bradc2s">
