@@ -121,6 +121,16 @@ color: #666;
 height: 20px;
 line-height: 20px;
 }
+#header #telephones a {
+text-decoration: none;
+color: #F00;
+font-size: 16px;
+}
+#header #telephones a:hover {
+text-decoration: none;
+color: #F00;
+font-size: 16px;
+}
 #header #telephone a {
 color: #666;
 font-size: 14px;
@@ -255,7 +265,7 @@ text-decoration: none;
 color: #333;
 }
 #footer a:hover {
-text-decoration: underline;
+text-decoration: none;
 color: #333;
 }
 .copy {
