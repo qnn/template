@@ -32,7 +32,7 @@ beian: 粤ICP备12015444号-
 
 #   公司控股工业集团创始于1935年...
 
-#   经过多年的持续发展，公司已跻身...
+#   经过多年的持续发展，公司已跻身...
 
 
 # 首页轮播大图（ - 表示数组项目）
@@ -144,7 +144,7 @@ product_categories:
       - 铁管家
     - - ping-guo
       - 苹果系列
-    - - zhen-cang
+    - - zhen-cang
       - 珍藏系列
     - - yi-dong
       - 逸动系列
@@ -180,36 +180,13 @@ product_categories:
       - 前厅投币柜
   - name: 金融系列
     cats:
-    - - jin-ku-men
-      - 金库门
-    - - yi-dong-jin-ku
-      - 移动金库
     - - yin-xing-bao-guan-xiang
       - 银行保管箱
-    - - xian-jin-tou-bao-ji
-      - 现金投包机
-    - - atm-gui-yuan-ji
-      - ATM柜员机
-    - - you-zhan-tou-bi-gui
-      - 油站投币柜
   - name: 枪弹系列
     cats:
     - - qiang-dan-gui
       - 枪弹柜
-    - - dan-yao-gui
-      - 弹药柜
-    - - zhi-neng-qiang-dan-gui
-      - 智能枪弹柜
-    - - zhi-neng-bao-mi-gui
-      - 智能保密柜
-    - - yue-chi-gui
-      - 钥匙柜
-    - - ji-cun-gui
-      - 寄存柜
-  - name: 物流系列
-    cats:
-    - - cun-qu-gui
-      - 存取柜
+
 
 # 生成的网站不包含的文件
 exclude: ['README.md', 'LICENSE']
