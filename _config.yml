@@ -124,15 +124,15 @@ p_img_cdn: http://stores.qnnimg.com/
 product_categories:
   - name: 家用系列
     cats:
-    - - feng-sheng-shui-qi
-      - 风生水起
-    - - quan-neng-jin-ku
+    - - b
       - 全能金库
-    - - ke-la-zhen-cang
+    - - bw
+      - 风生水起
+    - - kl
       - 可拉珍藏
-    - - gang-tie-xia
+    - - gtx
       - 钢铁侠
-    - - gao-er-fu
+    - - glf
       - 高尔夫
     - - xin-huang-guan
       - 新皇冠
