@@ -174,8 +174,6 @@ product_categories:
       - 抽屉式
   - name: 酒店系列
     cats:
-    - - qian-ting-bao-guan-xiang
-      - 前厅保管箱
     - - qian-ting-tou-bi-gui
       - 前厅投币柜
   - name: 金融系列
