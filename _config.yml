@@ -144,8 +144,10 @@ product_categories:
       - 铁金钢
     - - fg
       - 钢将军
-    - - hotel-ke-fang-gui
+    - - hotel-ke-fang
       - 酒店客房保管箱
+    - - hotsafe-da-tang
+      - 酒店大堂保管箱
     - - ping-guo
       - 苹果系列
     - - zhen-cang
@@ -172,8 +174,6 @@ product_categories:
       - 抽屉式
   - name: 酒店系列
     cats:
-    - - hotsafe-ke-fang-gui
-      - HOTSAFE客房柜
     - - qian-ting-bao-guan-xiang
       - 前厅保管箱
     - - qian-ting-tou-bi-gui
