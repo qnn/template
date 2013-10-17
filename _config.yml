@@ -148,8 +148,8 @@ product_categories:
       - 酒店客房保管箱
     - - hotsafe-da-tang
       - 酒店大堂保管箱
-    - - bmg
-      - 文件保密柜
+	- - bmg
+	  - 文件保密柜
 	- - tou-bi-shi
 	  - 投币式系列
     - - cw
