@@ -148,16 +148,20 @@ product_categories:
       - 酒店客房保管箱
     - - hotsafe-da-tang
       - 酒店大堂保管箱
+    - - bmg
+      - 文件保密柜
+    - - tou-bi-shi
+	  - 投币式系列
+    - - cw
+	  - 防潮系列
+    - - cs
+      - 复合型系列
     - - ping-guo
       - 苹果系列
     - - zhen-cang
       - 珍藏系列
     - - yi-dong
       - 逸动系列
-    - - cang-bao
-      - 藏宝系列
-    - - an-gu
-      - 安固系列
     - - qian-qiang
       - 嵌墙系列
   - name: 商用系列
@@ -168,14 +172,8 @@ product_categories:
     cats:
     - - wei-na-si
       - 维纳斯
-    - - bmg
-      - 文件保密柜
     - - chou-ti-shi
       - 抽屉式
-  - name: 酒店系列
-    cats:
-    - - qian-ting-tou-bi-gui
-      - 前厅投币柜
   - name: 金融系列
     cats:
     - - yin-xing-bao-guan-xiang
