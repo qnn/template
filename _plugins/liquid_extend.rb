@@ -19,6 +19,9 @@ module LiquidExtend
   def better_page_title(input)
     input.gsub(/\n|\t|\s/,"")
   end
+  def img(input)
+    File.basename(input, ".html") + '.jpg'
+  end
   
   Liquid::Template.register_filter self
 end
