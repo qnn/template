@@ -21,7 +21,7 @@ more_scripts: ["scripts/jquery-etalage-1.3.1.min.js"]
 						<li>净重：{{ page.weight }}</li>
 						<li>
 							<div class="clear">请选择型号：</div>{% for post in site.categories[page.category] %}
-							<a class="otherq{% if post.name == page.name %} otherqcur{% endif %}" href="{{ post.url }}" title="{{ post.name }}"><img src="{{ site.p_img_cdn }}finder/{{ post.url | img }}" /><br />{{ post.name }}</a>{% endfor %}
+							<a class="otherq{% if post.name == page.name %} otherqcur{% endif %}" href="{{ post.url }}" title="{{ post.name }}"><img src="{{ site.p_img_cdn }}products-small/{{ post.url | img }}" /><br />{{ post.name }}</a>{% endfor %}
 							<div class="clear"></div>
 						</li>
 						<li><a class="taobao" target="_blank" href="{% capture taobao %}{{ site.taobao[page.name] }}{% endcapture %}{% if taobao == '' %}{% capture taobao %}{{ site.taobao["default"] }}{% endcapture %}{% endif %}{% if taobao == '' %}http://www.taobao.com/{% else %}{{ taobao }}{% endif %}">点击购买</a></li>
