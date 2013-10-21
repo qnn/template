@@ -1,0 +1,113 @@
+---
+layout: default
+more_scripts: ["scripts/sliderkit-1.9.2.min.js"]
+---
+	<div id="main">
+		<div id="slidercontainer">
+			<div id="slider" class="sliderkit photoslider-bullets">
+				<div class="sliderkit-nav">
+					<div class="sliderkit-nav-clip">
+						<ul>{% for slide in site.slider %}
+							<li><a href="javascript:;"><img src="{{ slide.image }}" /></a></li>{% endfor %}
+						</ul>
+					</div>
+				</div>
+				<div class="sliderkit-panels">{% for slide in site.slider %}
+					<div class="sliderkit-panel">
+						<a href="{{ slide.link }}"><img alt="保险柜" src="{{ slide.image }}" /></a>
+					</div>{% endfor %}
+				</div>
+			</div>
+			<div id="servicecontainer">
+				<div id="hmpgservice">
+{{ site.service | markdownify | indent:4 }}
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="onecol">
+			<div class="bradcontainer">
+				<h3 class="bctitle"><a href="/products/">产品中心 <small>Products</small></a></h3>
+				<div class="switcher">
+					<div class="schild open">
+							<div class="snum">1</div>
+							<div class="stitle">全能金库</div>
+							<div class="sinfo">防盗技术全球领先，双模锁控，国家3C认证，防火，防盗。</div>
+							<div class="simg"><a href="/products/b-4538.html"><img src="{{ site.p_img_cdn }}template/b-5440.jpg" /></a></div>
+					</div>
+					<div class="schild">
+							<div class="snum">2</div>
+							<div class="stitle">风生水起</div>
+							<div class="sinfo">瑞气祥和之意，行云流水之美，成就风生水起。</div>
+							<div class="simg"><a href="/products/bw-6960.html"><img src="{{ site.p_img_cdn }}template/bw-6960.jpg" /></div>
+					</div>
+					<div class="schild">
+							<div class="snum">3</div>
+							<div class="stitle">可拉珍藏</div>
+							<div class="sinfo">时尚与安全的和谐统一，缔造出新时代收纳空间。</div>
+							<div class="simg"><a href="/products/kl-4045.html"><img src="{{ site.p_img_cdn }}template/kl-4045.jpg" /></div>
+					</div>
+					<div class="schild">
+							<div class="snum">4</div>
+							<div class="stitle">钢铁侠</div>
+							<div class="sinfo">高智能电子与高精密机械锁双重保护。</div>
+							<div class="simg"><a href="/products/gtx-3345.html"><img src="{{ site.p_img_cdn }}template/gtx-5842.jpg" /></div>
+					</div>
+					<div class="schild">
+							<div class="snum">5</div>
+							<div class="stitle">高尔夫</div>
+							<div class="sinfo">全钢结构，多门栓设计，坚固防撬，全面符合国家3C认证标准，创造极致全能安全生活空间。</div>
+							<div class="simg"><a href="/products/glf-3340.html"><img src="{{ site.p_img_cdn }}template/cw-7348-01.jpg" /></div>
+					</div>
+					<div class="schild">
+							<div class="snum">6</div>
+							<div class="stitle">指点江山</div>
+							<div class="sinfo">江山如画一时多少豪杰，指点江山，运筹帷幄。</div>
+							<div class="simg"><a href="/products/zf-4542.html"><img src="{{ site.p_img_cdn }}template/zf-5842.jpg" /></div>
+					</div>
+					<div class="schild">
+							<div class="snum">7</div>
+							<div class="stitle">新皇冠</div>
+							<div class="sinfo">安全空间典范之作，彰显生活品味。</div>
+							<div class="simg"><a href="/products/hg-2740.html"><a href="/wlcqg.html"><img src="{{ site.p_img_cdn }}template/hg-5840.jpg" /></a></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="bradcontainer">
+				<h3 class="bctitle"><a href="/stores/">专卖店风采 <small>Stores</small></a></h3>
+				<div class="gall">
+					<div id="galslide" class="sliderkit">
+						<div class="sliderkit-nav">
+							<div class="sliderkit-nav-clip">
+								<ul>{% for photo in site.photos %}
+									<li>
+										<a href="/stores/"><img src="{{ photo.thumb }}" /></a>
+									</li>{% endfor %}
+								</ul>
+							</div>
+							<div class="sliderkit-btn sliderkit-nav-btn sliderkit-nav-prev"><a href="#" title="Scroll to the left"><span>Previous</span></a></div>
+              <div class="sliderkit-btn sliderkit-nav-btn sliderkit-nav-next"><a href="#" title="Scroll to the right"><span>Next</span></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bradc2s">
+				<div class="bradcontainer bradc1">
+					<h3 class="bctitle"><a href="/about/">全能简介 <small>About Us</small></a></h3>
+					<div class="bradcontent">
+						<img class="leftimg" alt="全能保险柜" src="/images/aboutqnn.jpg" width="200" height="132" />
+{% capture about %}{% if site.homepage_about %}{{ site.homepage_about }}{% else %}全能保险柜{{ site.name }}是以从事保险柜（箱）等安防产品为主的现代化保险柜，拥有占地面积33000平方米的现代化厂房，装备了数百台国际著名品牌的数控冲床、折弯机、激光切割机、以及弧焊机器人等设备，并配备了独立的研发中心、检测中心、寿命实验室，具有世界领先的制造设备和工艺流程，产品涉及家用保险柜、文件保密柜、酒店客房保险箱、枪弹柜、金库门等多个系列近300余款产品，年生产规模超过30万台。{% endif %}{% endcapture %}{{ about | markdownify | indent:5 }}
+					</div>
+				</div>
+				<div class="bradcontainer bradc2">
+					<h3 class="bctitle"><a href="/contact/">联系我们 <small>Contact Us</small></a></h3>
+					<div class="bradcontent">
+						<img class="rightimg" alt="全能保险柜" src="/images/contactus.png" width="132" height="117" />
+{{ site.contact | markdownify | indent:6 }}
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>

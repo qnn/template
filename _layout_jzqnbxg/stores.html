@@ -1,0 +1,28 @@
+---
+layout: default
+---
+	<div>
+		<img class="banner" src="/images/banner.jpg" width="998" height="192" />
+	</div>
+	<div class="pro2cols">
+		<div class="pro2col_a">
+			<h2 class="header">
+				<em>你现在的位置：<a href="/">首页</a> &raquo; <a href="/stores/">专卖店风采</a></em>
+				专卖店风采 <small>Stores</small>
+			</h2>
+			<div>
+				<ul class="photoitem">{% for photo in site.photos %}
+					<li>
+						<div class="pimage">
+							<a class="thickbox" href="{{ photo.photo }}"><img src="{{ photo.thumb }}" /></a>
+						</div>
+						<div class="pinfo">
+{{ photo.content | markdownify | indent:7 }}
+						</div>
+						<div class="clear"></div>
+					</li>{% endfor %}
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>

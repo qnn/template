@@ -1,0 +1,35 @@
+---
+layout: default
+more_scripts: ["scripts/jquery.lazyload-1.8.4.min.js"]
+---
+	<div>
+		<img class="banner" src="/images/banner.jpg" width="998" height="192" />
+	</div>{% capture current_category %}{{ page.url | replace_first:'/products/','' | replace:'index.html','' | remove:'/' }}{% endcapture %}
+	<div class="pro2cols">
+		<div class="pro2col_a">
+			<h2 class="header">
+				<em>你现在的位置：<a href="/">首页</a> &raquo; <a href="/products">产品中心</a></em>
+				产品列表 <small>Products</small>
+			</h2>
+			<div class="pcontent">
+{% if current_category != '' %}
+				<h3>{{ current_category_name }}</h3>
+				<div class="prodsublist">{% for post in site.categories[current_category] reversed %}
+							<div class="psli"><a href="{{ post.url }}"><img src="{{ site.p_img_cdn }}products-small/{{ post.url | img }}" />{{ post.name }}</a></div>
+				{% endfor %}
+				<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+{% else %}{% for category in site.product_categories %}{% for subcategory in category.cats %}
+				<a name="{{ subcategory[0] }}"></a>
+				<h3>{{ subcategory[1] }}</h3>
+				<div class="prodsublist">{% capture subcatname %}{{ subcategory[0] }}{% endcapture %}{% for post in site.categories[subcatname] reversed %}
+					<div class="psli"><a href="{{ post.url }}"><img class="lazy" data-original="{{ site.p_img_cdn }}products-small/{{ post.url | img }}" src="/images/white.gif" />{{ post.name }}</a></div>{% endfor %}
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+{% endfor %}{% endfor %}{% endif %}
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>

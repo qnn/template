@@ -1,0 +1,19 @@
+---
+layout: default
+---
+	<div>
+		<img class="banner" src="/images/banner.jpg" width="998" height="192" />
+	</div>
+	<div class="pro2cols">
+		<div class="pro2col_a">
+			<h2 class="header">
+				<em>你现在的位置：<a href="/">首页</a> &raquo; <a href="/about/">公司简介</a></em>
+				全能简介 <small>About Us</small>
+			</h2>
+			<center><img src="/images/qnn.jpg" width="797" height="185" /></center>
+			<div class="ucontent">
+{% capture about %}{% if site.about %}{{ site.about }}{% else %}{% include about_company.md %}{% endif %}{% endcapture %}{{ about | markdownify | indent:4 }}
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
