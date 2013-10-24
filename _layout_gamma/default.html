@@ -8,8 +8,10 @@
 				<ul>
 					<li><a{% if page.url == '/index.html' %} class="current"{% endif %} href="/">首页</a></li>
 					<li><a{% if page.url contains '/about/' %} class="current"{% endif %} href="/about/">全能简介</a></li>
+					<li><a{% if page.url contains '/find/' %} class="current"{% endif %} href="/find/">产品导购</a></li>
 					<li><a{% if page.url contains '/products/' %} class="current"{% endif %} href="/products/">产品中心</a></li>
 					<li><a{% if page.url contains '/stores/' %} class="current"{% endif %} href="/stores/">专卖店风采</a></li>
+					<li><a{% if page.url contains '/360-panoramas/' %} class="current"{% endif %} href="/360-panoramas/">总部工厂360°实景</a></li>
 					<li><a{% if page.url contains '/services/' %} class="current"{% endif %} href="/services/">服务中心</a></li>
 					<li><a{% if page.url contains '/contact/' %} class="current"{% endif %} href="/contact/">联系我们</a></li>
 					<li class="end"></li>
