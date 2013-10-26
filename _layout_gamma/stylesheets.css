@@ -1349,3 +1349,10 @@ display: none;
 .h81160 {
   background: url(/images/icon-h81160.png) no-repeat -15px -15px;
 }
+
+
+#pano {
+  height: 600px;
+  margin: 20px 0;
+}
+
